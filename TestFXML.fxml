@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mMainVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uece.lotus.tools.teste.TestFXMLController">
+    <children>
+        <ScrollPane fx:id="mScrollPane" pannable="true" prefHeight="349.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </ScrollPane>
+        <TabPane fx:id="mTabPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="226.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab closable="false" text="Traces - Model / System">
+                    <content>
+                        <HBox>
+                            <children>
+                                
+                        <VBox alignment="BOTTOM_RIGHT" prefHeight="159.0" prefWidth="646.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <TableView prefHeight="159.0" prefWidth="717.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </VBox>
+                        <VBox alignment="BOTTOM_RIGHT" prefHeight="169.0" prefWidth="170.0">
+                           <children>
+                                      
+                                                
+                                              <Button fx:id="mButtonSubmit" alignment="BOTTOM_RIGHT" contentDisplay="BOTTOM" defaultButton="true" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="" text="Submit" textAlignment="JUSTIFY">
+                                                  <cursor>
+                                                     <Cursor fx:constant="DEFAULT" />
+                                                  </cursor>
+                                               </Button>
+                           </children>
+                        </VBox>
+                            </children>
+                        </HBox>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</VBox>
